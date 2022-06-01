@@ -1,0 +1,42 @@
+.mgt-light {
+    background-color: inherit !important;
+}
+
+.mgt-dark {
+    background-color: inherit !important;
+}
+
+/* Agenda Component Styling */
+mgt-agenda {
+    --event-margin: 0px 10px 14px 0px;
+    --event-subject-font-size: 16px;
+    --agenda-header-font-size: 20px;
+    --agenda-header-margin: 20px 10px 14px 0px;
+    margin: 0;
+    --event-background-color: none;
+}
+
+/* To-Do Component Styling */
+mgt-todo {
+    --tasks-background-color: none;
+    --task-background: none;
+    --tasks-padding: none;
+    --task-complete-background: none;
+    background-color: transparent;
+    --task-margin: 0px 10px 14px 0px;
+    --background-color-sub1: transparent;
+    --task-border: 2px solid var(--input-border);
+}
+
+.mgt-col {
+    float: left;
+    width: 32%;
+    background:transparent;
+    height:500px;
+    overflow: hidden;
+    padding: 10;
+}
+
+.mgt-col:hover {
+    overflow-y: auto;
+}

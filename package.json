@@ -1,0 +1,17 @@
+{
+    "name": "mgtteamsfx",
+    "version": "0.0.1",
+    "description": "",
+    "author": "",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "@microsoft/teamsfx-cli": "1.*"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@fluentui/react-components": "^9.0.0-rc.13",
+        "@fluentui/react-icons": "^2.0.153-canary.0"
+    }
+}
