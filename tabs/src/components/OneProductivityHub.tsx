@@ -17,10 +17,11 @@ const hubStyles = makeStyles({
 export default function OneProductivityHub() {
   const { isSignedIn, toolkitTheme } = useGraphToolkit();
   const [ scopes ] = useState<string[]>([
+    'User.Read',
     'User.Read.All', 
     'Files.Read.All',
     'Calendars.Read',
-    'Tasks.Read',
+    'Tasks.ReadWrite',
     'People.Read'
   ]);
   const [selectedValue, setSelectedValue] = useState<TabValue>('tab-my-day');
@@ -67,6 +68,7 @@ export default function OneProductivityHub() {
         
       { isSignedIn && (
         <>
+          Welcome <Person personQuery="me" view={ViewType.threelines} />
           <TabList defaultSelectedValue="tab-my-day" onTabSelect={onTabSelect}>
             <Tab value="tab-my-day">My Day</Tab>
             <Tab value="tab-my-conversations">My Conversations</Tab>
@@ -78,10 +80,6 @@ export default function OneProductivityHub() {
             {selectedValue === 'tab-my-conversations' && <div>My Conversations</div>}
             {selectedValue === 'tab-my-teams' && <div>My Teams</div>}
             {selectedValue === 'tab-my-files' && <div>My Teams</div>}
-          </div>
-          <Person personQuery="me" view={ViewType.threelines} />
-          <div>
-            <Button appearance="primary" onClick={loginClick}>Authorize</Button>
           </div>
           
         </>

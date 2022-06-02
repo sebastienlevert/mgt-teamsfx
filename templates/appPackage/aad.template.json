@@ -23,6 +23,26 @@
                 {
                     "id": "User.Read",
                     "type": "Scope"
+                },
+                {
+                    "id": "User.Read.All",
+                    "type": "Scope"
+                },
+                {
+                    "id": "Files.Read.All",
+                    "type": "Scope"
+                },
+                {
+                    "id": "Calendars.Read",
+                    "type": "Scope"
+                },
+                {
+                    "id": "Tasks.ReadWrite",
+                    "type": "Scope"
+                },
+                {
+                    "id": "People.Read",
+                    "type": "Scope"
                 }
             ]
         }

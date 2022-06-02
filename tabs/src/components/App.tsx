@@ -19,7 +19,7 @@ export default function App() {
   const { loading } = useTeamsFx();
   const { teamsTheme } = useGraphToolkit();
   return (
-    <FluentProvider theme={teamsTheme}>    
+    <FluentProvider theme={teamsTheme}>
       <Router>
         <Route exact path="/">
           <Redirect to="/tab" />
